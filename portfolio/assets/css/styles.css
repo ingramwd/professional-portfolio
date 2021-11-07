@@ -1,26 +1,37 @@
 :root {
     --primary-text: #fff;
+    overflow: auto;
 }
 
 html {
-    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+* {
+
 }
 
 body {
 margin: 0;
 padding: 0;
 color:#fff;
+background-color: #00559E;
 }
 
 
 /* Header Section */
 header {
+    padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-
+    background-image: url(../images/Cincinnati.jpg);
+    background-size: cover;
+    background-position: top;
+    /* filter: brightness(50%); */
+    z-index: 9999;
 }
 
 header h1 {
@@ -45,7 +56,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 25px;
+    padding: 10px 15px;
     font-weight: bold;
     font-size: 1.5vw;
 }
@@ -59,6 +70,8 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+z-index: 2;
+background-attachment: fixedA;
 }
 
 .hero-img {
@@ -70,6 +83,31 @@ align-items: center;
     height: 100%;
     background-image: url(../images/Cincinnati.jpg);
     background-size: cover;
-    position: center;
-    filter: brightness(50%);
+    background-size: position: center;
+    /* filter: brightness(50%); */
+    z-index: 9998;
+}
+
+.profile-photo {
+    width: 100%;
+    margin: 35px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.profile-photo img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    height: 15%;
+    position: relative;
+    right: 250px;
+    border-radius: 30px;
+    overflow: none;
+}
+
+#contact-information ul li a {
+    color: var(--primary-text);
+    text-decoration: none;
 }
