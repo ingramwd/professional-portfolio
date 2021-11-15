@@ -1,5 +1,7 @@
 :root {
     --primary-text: #fff;
+    --primary-color: #b1a296;
+    --secondary-color: #c38d9e;
     overflow: auto;
 }
 
@@ -7,15 +9,11 @@ html {
     overflow-y: hidden;
 }
 
-* {
-
-}
-
 body {
 margin: 0;
 padding: 0;
 color:#fff;
-background-color: #00559E;
+background-color: var(--primary-color)
 }
 
 
@@ -27,10 +25,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url(../images/Cincinnati.jpg);
-    background-size: cover;
-    background-position: top;
-    /* filter: brightness(50%); */
+    background-color: var(--secondary-color);
     z-index: 9999;
 }
 
@@ -61,53 +56,42 @@ header nav ul li a {
     font-size: 1.5vw;
 }
 
+section h2 {
+    font-size: 36px;
+}
+
 /* Hero Section */
 .hero {
-position: relative;
-width: 100vw;
-height: 100vw;
-display: flex;
-flex-wrap: wrap;
+background-image: url(../images/hero-image.jpg);
+background-size: cover;
+background-position: center;
 justify-content: center;
-align-items: center;
-z-index: 2;
-background-attachment: fixedA;
+align-items: flex-start;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: baseline;
 }
 
-.hero-img {
-    content: "";
-    position: aboslute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Cincinnati.jpg);
-    background-size: cover;
-    background-size: position: center;
-    /* filter: brightness(50%); */
-    z-index: 9998;
-}
-
-.profile-photo {
-    width: 100%;
-    margin: 35px 0px 0px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 .profile-photo img {
-    display: flex;
-    flex-wrap: wrap;
-    width: 15%;
-    height: 15%;
-    position: relative;
-    right: 250px;
-    border-radius: 30px;
-    overflow: none;
+    flex:1;
+    justify-content: center;
+    width: 50%;
+    height: 25%;
+    margin: 10px;
+    border-radius: 15%;
+    left: 100px;
+
 }
 
 #contact-information ul li a {
     color: var(--primary-text);
     text-decoration: none;
 }
+
+footer {
+    background-color: var(--secondary-color);
+    font-size: 1.5vw;
+}
+
