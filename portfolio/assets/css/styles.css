@@ -79,11 +79,19 @@ flex-direction: row;
 align-items: baseline;
 }
 
-#works div {
+.hero div h3 {
+    font-size: 35px;
+    
+}
+
+.works-contains {
     display: flex;
-    justify-content: space-evenly;
-    width: 20vw;
-    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-contains  div {
+flex-basis: 40%;
 }
 
 #works div a img {
@@ -104,6 +112,11 @@ align-items: baseline;
     height: auto; 
 }
 
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .profile-photo img {
     flex:1;
